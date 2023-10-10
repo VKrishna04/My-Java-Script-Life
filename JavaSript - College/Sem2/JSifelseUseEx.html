@@ -1,57 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body{margin: 1;padding: 1;}
-        h1{background-color: darkgreen; color: white;text-align: center;}
-        input{
-            height: 0.5cm; width: 1cm;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  body{margin: 1;padding: 1;}
+  h1{background-color: darkgreen; color: white;text-align: center;}
+  input{
+  height: 0.5cm; width: 1cm;
+  }
+  </style>
 </head>
 <body>
-    <script>
-        function check1(){
-            var a=parseInt(document.getElementById("n1").value);
-            var b=parseInt(document.getElementById("n2").value);
-            var c=parseInt(document.getElementById("n3").value);
-            var d=parseInt(document.getElementById("n4").value);
-            var e=parseInt(document.getElementById("n5").value);
-            var total=(a+b+c+d+e);
-            var perc=(total*100/500);
-            document.getElementById("tot").innerHTML="Total Marks= "+total;
-            document.getElementById("per").innerHTML="Percentage= "+perc+"%";
-            //document.write("Total= "+total+"<br");
-            //document.write("Percentage= "+perc);
-            if(perc>=60){
-                document.getElementById("id1").innerHTML="Congrates! You got 1st Div"
-           }
-           else if(perc>=45){
-                document.getElementById("id1").innerHTML="Congrates! You got 2nd Div"
-           }
-           else if(perc>=35){
-                document.getElementById("id1").innerHTML="Congrates! You got 3rd Div"
-           }
-           else {
-                document.getElementById("id1").innerHTML="Sorry! Better Luck Next Time"
-           }
-        }
-    </script>
-    <h1> Check Your Result</h1>
-    <form>
-        UID:<input type="text" id="n1">
-        JAVA:<input type="text" id="n2">
-        MFC:<input type="text" id="n3">
-        DSA:<input type="text" id="n4">
-        IH:<input type="text" id="n5">
-        <button type="button" onclick="check1()">Result Status</button>
-        <p id="tot"></p>
-        <p id="per"></p>
-        <p id="id1"></p>
+  <script>
+  function check1(){
+  var a=parseInt(document.getElementById("n1").value);
+  var b=parseInt(document.getElementById("n2").value);
+  var c=parseInt(document.getElementById("n3").value);
+  var d=parseInt(document.getElementById("n4").value);
+  var e=parseInt(document.getElementById("n5").value);
+  var total=(a+b+c+d+e);
+  var perc=(total*100/500);
+  document.getElementById("tot").innerHTML="Total Marks= "+total;
+  document.getElementById("per").innerHTML="Percentage= "+perc+"%";
+  //document.write("Total= "+total+"<br");
+  //document.write("Percentage= "+perc);
+  if(perc>=60){
+  document.getElementById("id1").innerHTML="Congrates! You got 1st Div"
+   }
+   else if(perc>=45){
+  document.getElementById("id1").innerHTML="Congrates! You got 2nd Div"
+   }
+   else if(perc>=35){
+  document.getElementById("id1").innerHTML="Congrates! You got 3rd Div"
+   }
+   else {
+  document.getElementById("id1").innerHTML="Sorry! Better Luck Next Time"
+   }
+  }
+  </script>
+  <h1> Check Your Result</h1>
+  <form>
+  UID:<input type="text" id="n1">
+  JAVA:<input type="text" id="n2">
+  MFC:<input type="text" id="n3">
+  DSA:<input type="text" id="n4">
+  IH:<input type="text" id="n5">
+  <button type="button" onclick="check1()">Result Status</button>
+  <p id="tot"></p>
+  <p id="per"></p>
+  <p id="id1"></p>
 
-    </form>
+  </form>
 </body>
 </html>
